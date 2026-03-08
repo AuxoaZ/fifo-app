@@ -9,6 +9,7 @@ export default function Home() {
     fetch("/api/sheet")
       .then((res) => res.json())
       .then((result) => {
+        console.log(result);
         setData(result);
       });
   }, []);
